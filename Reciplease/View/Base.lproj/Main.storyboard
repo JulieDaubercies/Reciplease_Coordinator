@@ -144,35 +144,10 @@
             </objects>
             <point key="canvasLocation" x="4274" y="84"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="bTd-D5-iiK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AUy-qF-nih" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="bGo-NZ-IT1"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="fuk-n0-Xfl"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dw0-Vh-wbm">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="4sE-ji-UzH" kind="relationship" relationship="rootViewController" id="MoO-3v-gyL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9cv-YZ-USk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1226" y="-430"/>
-        </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="AFb-dU-oRc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rBr-gi-WTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fgh-Bj-GLs" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fgh-Bj-GLs" customClass="MainTabBarController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ZmD-dx-BZK"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AuD-Nf-uVx">
@@ -182,11 +157,11 @@
                     </tabBar>
                     <connections>
                         <outlet property="tabBar" destination="AuD-Nf-uVx" id="T6u-yn-AiW"/>
-                        <segue destination="AUy-qF-nih" kind="relationship" relationship="viewControllers" id="ggY-ao-cZt"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBr-gi-WTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="218.84057971014494" y="-51.5625"/>
+            <point key="canvasLocation" x="1225" y="-397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bhr-02-Ik5">
@@ -221,7 +196,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-bN-afA">
-                                <rect key="frame" x="10" y="118" width="370" height="89"/>
+                                <rect key="frame" x="10" y="74" width="370" height="89"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's in your fridge ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCv-41-RU0">
                                         <rect key="frame" x="0.0" y="0.0" width="370" height="26"/>
@@ -253,7 +228,7 @@
                                 <color key="backgroundColor" red="0.48950441919999998" green="0.4488782066" blue="0.40555510389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r3C-bO-84e">
-                                <rect key="frame" x="20" y="252" width="350" height="38"/>
+                                <rect key="frame" x="20" y="208" width="350" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your ingredients : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnF-oB-iEN">
                                         <rect key="frame" x="0.0" y="0.0" width="262" height="38"/>
@@ -275,7 +250,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l2A-Tj-7ik">
-                                <rect key="frame" x="30" y="325" width="330" height="358"/>
+                                <rect key="frame" x="30" y="281" width="330" height="451"/>
                                 <color key="backgroundColor" red="0.48950441919999998" green="0.4488782066" blue="0.40555510389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="hcy-64-jRM">
                                     <rect key="frame" x="0.0" y="119.33333206176758" width="330" height="44"/>
@@ -307,7 +282,7 @@
                                 </connections>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xT4-pj-3Na">
-                                <rect key="frame" x="50" y="703" width="290" height="38"/>
+                                <rect key="frame" x="50" y="752" width="290" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBi-3Y-Pqo">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="38"/>

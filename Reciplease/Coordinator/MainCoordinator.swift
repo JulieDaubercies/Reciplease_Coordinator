@@ -21,6 +21,7 @@ class MainCoordinator: Coordinator {
     func startCoordinator() {
         let initialViewController = SearchViewController.instantiate()
         initialViewController.coordinator = self
+        initialViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         navigationController.pushViewController(initialViewController, animated: false)
     }
     

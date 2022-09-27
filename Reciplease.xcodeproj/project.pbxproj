@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1003337B28E32794005D3B77 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003337A28E32794005D3B77 /* MainTabBarController.swift */; };
 		29D9342E9F164A758126B9B9 /* Pods_Reciplease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17116C28B1E69AD6E851FBF /* Pods_Reciplease.framework */; };
 		373EA8D22809627700B76702 /* ResultTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373EA8D12809627700B76702 /* ResultTableViewModel.swift */; };
 		373EA8D6281DCD8800B76702 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373EA8D5281DCD8800B76702 /* DetailViewModel.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1003337A28E32794005D3B77 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		1E5BAC746AAB5C425D27FB41 /* Pods-RecipleaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipleaseTests.release.xcconfig"; path = "Target Support Files/Pods-RecipleaseTests/Pods-RecipleaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		373EA8D12809627700B76702 /* ResultTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewModel.swift; sourceTree = "<group>"; };
 		373EA8D5281DCD8800B76702 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				3797464327032900008A3713 /* SearchViewController.swift */,
 				3797467227032BC8008A3713 /* TableViewController.swift */,
 				3797467427032BEF008A3713 /* DetailViewController.swift */,
+				1003337A28E32794005D3B77 /* MainTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 			files = (
 				3797464A27032900008A3713 /* Reciplease.xcdatamodeld in Sources */,
 				379746A82706E7DE008A3713 /* NetworkError.swift in Sources */,
+				1003337B28E32794005D3B77 /* MainTabBarController.swift in Sources */,
 				379746932705DF88008A3713 /* EdamamSession.swift in Sources */,
 				3797467E27032CBF008A3713 /* Extensions.swift in Sources */,
 				37EA6B572800692E00AD1130 /* SearchViewModel.swift in Sources */,

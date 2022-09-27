@@ -18,12 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let navController = UINavigationController()
-        mainCoordinator = MainCoordinator(navigationController: navController)
-        mainCoordinator?.startCoordinator()
+//        let navController = UINavigationController()
+//        mainCoordinator = MainCoordinator(navigationController: navController)
+//        mainCoordinator?.startCoordinator()
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navController
+       // window?.rootViewController = navController
+        window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
         
         if #available(iOS 15, *) {

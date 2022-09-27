@@ -19,19 +19,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let appWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
         appWindow.windowScene = windowScene
         
-        let navController = UINavigationController()                                    // **
-        mainCoordiantor = MainCoordinator(navigationController: navController)          // **
-        mainCoordiantor?.startCoordinator()                                             // **
+//        let navController = UINavigationController()                                    // **
+//        mainCoordiantor = MainCoordinator(navigationController: navController)          // **
+//        mainCoordiantor?.startCoordinator()                                             // **
         
-       // appWindow.rootViewController = navController
-         appWindow.rootViewController = mainCoordiantor?.navigationController            // **
+        appWindow.rootViewController = MainTabBarController()
+       //  appWindow.rootViewController = mainCoordiantor?.navigationController            // **
         appWindow.makeKeyAndVisible()                                                   // **
         window = appWindow   // ** permet de faire fonctionner le coordinator mais ne fait plus apparaître le tabBar
         
         if let tabBarController = window?.rootViewController as? UITabBarController {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "NavController")
-            vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+            vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
             tabBarController.viewControllers?.append(vc)
         }
     }
