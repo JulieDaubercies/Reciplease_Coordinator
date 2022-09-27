@@ -14,6 +14,7 @@ class DetailViewController: UIViewController, Storyboarded {
     var viewModel = DetailViewModel.shared
     var move: Bool!
     var recipeIndexPath: Int?
+    weak var coordinator: MainCoordinator?
     @IBOutlet private var recipeImage: UIImageView!
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var getDirectionsButton: UIButton!

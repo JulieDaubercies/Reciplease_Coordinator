@@ -14,16 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
 
     var window: UIWindow?
     lazy var coreDataStack = CoreDataStack(modelName: "Reciplease")
-    var mainCoordinator: MainCoordinator?
+  //  var mainCoordinator: MainCoordinator?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
 //        let navController = UINavigationController()
 //        mainCoordinator = MainCoordinator(navigationController: navController)
 //        mainCoordinator?.startCoordinator()
-
+//        window?.rootViewController = navController
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-       // window?.rootViewController = navController
         window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
         
@@ -43,6 +43,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
             tabBarApperance.backgroundColor = #colorLiteral(red: 0.4992316365, green: 0.4463163614, blue: 0.4012482166, alpha: 1)
             UITabBar.appearance().scrollEdgeAppearance = tabBarApperance
             UITabBar.appearance().standardAppearance = tabBarApperance
+            
+            let tabBarItemAppearance = UITabBarItemAppearance()
+            tabBarItemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.yellow]
+            tabBarItemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.yellow]
+            tabBarItemAppearance.normal.iconColor = .gray
+            tabBarItemAppearance.selected.iconColor = .yellow
+            tabBarApperance.stackedLayoutAppearance = tabBarItemAppearance
         }
         
         return true

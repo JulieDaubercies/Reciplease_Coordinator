@@ -115,13 +115,10 @@ extension SearchViewController: UITableViewDataSource {
 
 extension SearchViewController: NetworkServiceDelegate {
     func didCompleteRequest(result: [Hit]) {
-       // if let vc = storyboard?.instantiateViewController(withIdentifier: "TableViewController") as? TableViewController {
-            tableViewModel.hits = result
-            tableViewModel.nextPage = viewModel.nextPage
-            tableViewModel.ingredients = viewModel.arrayOfIngredients.value.joined(separator: ",")
-        //    navigationController?.pushViewController(vc, animated: true)
-            coordinator?.LaunchSearch()
-      //  }
+        tableViewModel.hits = result
+        tableViewModel.nextPage = viewModel.nextPage
+        tableViewModel.ingredients = viewModel.arrayOfIngredients.value.joined(separator: ",")
+        coordinator?.LaunchSearch()
     }
     
     func stopAnimation() {

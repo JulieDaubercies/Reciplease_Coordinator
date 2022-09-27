@@ -44,12 +44,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDG-da-z05" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3195" y="84"/>
+            <point key="canvasLocation" x="3329" y="-63"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="0c1-FY-iW1">
             <objects>
-                <viewController storyboardIdentifier="Detail" id="Iz8-GE-Jfi" customClass="DetailViewController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="Iz8-GE-Jfi" customClass="DetailViewController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="2" contentMode="scaleToFill" id="Hhb-mj-6yD">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +161,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBr-gi-WTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1225" y="-397"/>
+            <point key="canvasLocation" x="1357" y="-432"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bhr-02-Ik5">
@@ -185,7 +185,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yue-UA-vMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1225" y="286"/>
+            <point key="canvasLocation" x="2265" y="266"/>
         </scene>
         <!--Reciplease-->
         <scene sceneID="eIr-CL-gSL">

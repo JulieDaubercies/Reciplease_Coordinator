@@ -43,7 +43,6 @@ class TableViewController: UITableViewController, Storyboarded {
             searchResponse = false
         }
         tableView.reloadData()
-        print(searchResponse)
     }
     
     // A faire attention par rapport aux mises à jour d'Apple (ancienne méthode)
@@ -118,7 +117,7 @@ class TableViewController: UITableViewController, Storyboarded {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController else { return }
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
         detailViewModel.recipeIndexPath = indexPath.row
         vc.recipeIndexPath = indexPath.row
         if searchResponse == true {
@@ -127,6 +126,7 @@ class TableViewController: UITableViewController, Storyboarded {
         } else {
             detailViewModel.searchResponse = false
         }
+       // coordinator?.seeDetails(index: indexPath.row)
         navigationController?.pushViewController(vc, animated: true)
     }
     

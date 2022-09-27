@@ -30,4 +30,11 @@ class MainCoordinator: Coordinator {
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
+    
+    func seeDetails(index: Int) {
+        let vc = DetailViewController.instantiate()
+        vc.coordinator = self
+        vc.recipeIndexPath = index
+        navigationController.pushViewController(vc, animated: true)
+    }
 }

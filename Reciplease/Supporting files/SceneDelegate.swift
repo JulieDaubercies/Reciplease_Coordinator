@@ -10,23 +10,26 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var mainCoordiantor: MainCoordinator?
+//    var mainCoordiantor: MainCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
-        guard let windowScene = (scene as? UIWindowScene) else {return}
-        
-        let appWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        appWindow.windowScene = windowScene
+//        guard let windowScene = (scene as? UIWindowScene) else {return}
+//        let appWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
+//        appWindow.windowScene = windowScene
         
 //        let navController = UINavigationController()                                    // **
 //        mainCoordiantor = MainCoordinator(navigationController: navController)          // **
 //        mainCoordiantor?.startCoordinator()                                             // **
+//        appWindow.rootViewController = mainCoordiantor?.navigationController          // **
         
-        appWindow.rootViewController = MainTabBarController()
-       //  appWindow.rootViewController = mainCoordiantor?.navigationController            // **
-        appWindow.makeKeyAndVisible()                                                   // **
-        window = appWindow   // ** permet de faire fonctionner le coordinator mais ne fait plus apparaître le tabBar
+//        appWindow.rootViewController = MainTabBarController()
+//        appWindow.makeKeyAndVisible()
+//        window = appWindow
+        
+        window?.rootViewController = MainTabBarController()
+        window?.makeKeyAndVisible()
+        
         
         if let tabBarController = window?.rootViewController as? UITabBarController {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
